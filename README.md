@@ -90,5 +90,5 @@ To disable or uninstall:
 - **Disable**: Go to Extensions (`Cmd + Shift + X`), search for `Auto Boilerplate`, and click **Disable**.
 - **Uninstall**: Click the gear icon next to `Auto Boilerplate` and click **Uninstall**, or run:
   ```bash
-  code --uninstall-extension Ayush.auto-boilerplate
+  code --uninstall-extension ayush2861.auto-boilerplate
   ```
