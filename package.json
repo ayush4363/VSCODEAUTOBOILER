@@ -1,0 +1,78 @@
+{
+  "name": "auto-boilerplate",
+  "displayName": "Auto Boilerplate",
+  "description": "Automatically inserts clean starter boilerplate code and positions the cursor when creating or opening empty files.",
+  "version": "1.0.0",
+  "publisher": "local-developer",
+  "author": {
+    "name": "Auto Boilerplate Developer"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/local-developer/auto-boilerplate"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "boilerplate",
+    "template",
+    "auto",
+    "c",
+    "cpp",
+    "java",
+    "python",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "kotlin",
+    "go",
+    "rust",
+    "csharp"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "autoBoilerplate.insert",
+        "title": "Auto Boilerplate: Insert Template into Current File",
+        "category": "Auto Boilerplate"
+      }
+    ],
+    "configuration": {
+      "title": "Auto Boilerplate",
+      "properties": {
+        "autoBoilerplate.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable automatic boilerplate insertion."
+        },
+        "autoBoilerplate.onOpenEmptyFiles": {
+          "type": "boolean",
+          "default": true,
+          "description": "When true, inserts boilerplate into empty files when opened. When false, only newly created files receive boilerplate."
+        },
+        "autoBoilerplate.showNotification": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show an informational notification whenever a boilerplate template is inserted."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test test/templates.test.js test/extension.test.js test/verify_workspace.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {}
+}
