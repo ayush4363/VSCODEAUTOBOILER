@@ -3,14 +3,13 @@
   "displayName": "Auto Boilerplate",
   "description": "Automatically inserts clean starter boilerplate code and positions the cursor when creating or opening empty files.",
   "version": "1.0.1",
-  "publisher": "local-developer",
+  "publisher": "Ayush upadhyay",
   "author": {
     "name": "Auto Boilerplate Developer"
   },
   "license": "MIT",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/local-developer/auto-boilerplate"
+    "type": "git"
   },
   "engines": {
     "vscode": "^1.80.0"
