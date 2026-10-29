@@ -161,8 +161,10 @@ const TEMPLATES = {
   },
   html: {
     language: 'HTML',
-    generate: () =>
-      `<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Document</title>\n</head>\n<body>\n    ${CURSOR_MARKER}\n</body>\n</html>\n`
+    generate: (filename) => {
+      const title = (filename ? path.basename(filename, path.extname(filename)) : '') || 'Document';
+      return `<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>${title}</title>\n    <link rel="stylesheet" href="style.css">\n</head>\n<body>\n    ${CURSOR_MARKER}\n    <script src="script.js"></script>\n</body>\n</html>\n`;
+    }
   },
   css: {
     language: 'CSS',

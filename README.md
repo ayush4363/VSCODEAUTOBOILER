@@ -17,7 +17,7 @@ No snippet triggers, Tab pressing, or manual commands needed—it works automati
 | **JavaScript** | `.js`, `.cjs` | Inside `main()` | Node.js / CommonJS script with `require.main === module` check |
 | **JavaScript (ESM)** | `.mjs` | Inside `main()` | Modern ES module export `export function main()` |
 | **TypeScript** | `.ts`, `.cts`, `.mts` | Inside `main()` | Typed entry point `function main(): void` |
-| **HTML** | `.html`, `.htm` | Inside `<body>` | HTML5 boilerplate with UTF-8 and responsive viewport |
+| **HTML** | `.html`, `.htm` | Inside `<body>` | HTML5 boilerplate with dynamic `<title>` matching filename, `style.css`, and `script.js` |
 | **CSS** | `.css` | Inside `body { ... }` | CSS reset and baseline styling with `:root` variables |
 | **Kotlin** | `.kt`, `.kts` | Inside `main()` | Kotlin standard entry point `fun main() { ... }` |
 | **Go** | `.go` | Inside `main()` | Standard `package main` with `fmt.Println` |

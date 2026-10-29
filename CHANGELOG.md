@@ -2,6 +2,14 @@
 
 All notable changes to the **Auto Boilerplate** extension will be documented in this file.
 
+## [1.0.2] - 2026-10-30
+
+### Enhanced
+- Enhanced HTML boilerplate to dynamically set `<title>` to match the file name (e.g. `index`, `contact`, etc.).
+- Added `<link rel="stylesheet" href="style.css">` inside `<head>`.
+- Added `<script src="script.js"></script>` inside `<body>`.
+- Optimized cursor placement inside `<body>` before the script tag.
+
 ## [1.0.1] - 2026-10-29
 
 ### Fixed

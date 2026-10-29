@@ -229,11 +229,14 @@ test('Cursor placement coordinates verify exact editable location', () => {
   // HTML
   const html = getTemplateForFile('index.html');
   const htmlLines = html.content.split('\n');
-  assert.strictEqual(html.cursor.line, 8);
+  assert.strictEqual(html.cursor.line, 9);
   assert.strictEqual(html.cursor.character, 4);
-  assert.strictEqual(htmlLines[7], '<body>');
-  assert.strictEqual(htmlLines[8], '    ');
-  assert.strictEqual(htmlLines[9], '</body>');
+  assert.strictEqual(htmlLines[5], '    <title>index</title>');
+  assert.strictEqual(htmlLines[6], '    <link rel="stylesheet" href="style.css">');
+  assert.strictEqual(htmlLines[8], '<body>');
+  assert.strictEqual(htmlLines[9], '    ');
+  assert.strictEqual(htmlLines[10], '    <script src="script.js"></script>');
+  assert.strictEqual(htmlLines[11], '</body>');
 
   // CSS
   const css = getTemplateForFile('style.css');

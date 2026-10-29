@@ -2,7 +2,7 @@
   "name": "auto-boilerplate",
   "displayName": "Auto Boilerplate",
   "description": "Automatically inserts clean starter boilerplate code and positions the cursor when creating or opening empty files.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "ayush2861",
   "author": {
     "name": "Ayush"
