@@ -2,6 +2,11 @@
 
 All notable changes to the **Auto Boilerplate** extension will be documented in this file.
 
+## [1.0.1] - 2026-10-29
+
+### Fixed
+- Replaced `#include <bits/stdc++.h>` with standard `#include <iostream>` in the C++ template to eliminate the `'bits/stdc++.h' file not found` red squiggly error on macOS Clang/Xcode environments.
+
 ## [1.0.0] - Initial Release
 
 ### Features

@@ -11,7 +11,7 @@ No snippet triggers, Tab pressing, or manual commands needed—it works automati
 | Language | Extensions | Cursor Placement | Notes |
 | :--- | :--- | :--- | :--- |
 | **C** | `.c` | Inside `main()` | Standard C entry point with `return 0;` |
-| **C++** | `.cpp`, `.cc`, `.cxx`, `.hpp`, `.h`, `.hh`, `.hxx` | Inside `main()` | GCC competitive programming template with `<bits/stdc++.h>` *(see note below)* |
+| **C++** | `.cpp`, `.cc`, `.cxx`, `.hpp`, `.h`, `.hh`, `.hxx` | Inside `main()` | Standard C++ entry point with `<iostream>` and `using namespace std;` |
 | **Java** | `.java` | Inside `main()` | Dynamically derives `public class <Name>` matching the filename |
 | **Python** | `.py` | On `pass` statement | `def main(): pass` with `__name__ == '__main__'` guard |
 | **JavaScript** | `.js`, `.cjs` | Inside `main()` | Node.js / CommonJS script with `require.main === module` check |
@@ -28,8 +28,8 @@ No snippet triggers, Tab pressing, or manual commands needed—it works automati
 
 ## Important Language Notes
 
-### C++ (`<bits/stdc++.h>`)
-The C++ template includes `#include <bits/stdc++.h>` and `using namespace std;`. This header is widely used in competitive programming and is supported by GCC / G++ and Clang with GCC libstdc++. It is not part of the ISO C++ standard library. If compiling with MSVC or standard Clang libc++, replace `<bits/stdc++.h>` with individual headers (`<iostream>`, `<vector>`, etc.) as needed.
+### C++ (`<iostream>`)
+The C++ template includes standard `#include <iostream>` and `using namespace std;`. This is 100% compliant with standard ISO C++ and works without missing-header errors across macOS (Apple Clang/Xcode), Linux (GCC/Clang), and Windows (MSVC).
 
 ### Java Class Naming
 Java requires the name of any `public class` to match its source filename exactly.

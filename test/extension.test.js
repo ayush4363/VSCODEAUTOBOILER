@@ -162,7 +162,7 @@ test('Empty file receives appropriate boilerplate template', async () => {
   assert.strictEqual(result, true, 'Should successfully process empty .cpp file');
   assert.strictEqual(mockVsCode._appliedEdits.length, 1);
   const editOp = mockVsCode._appliedEdits[0].operations[0];
-  assert.ok(editOp.text.includes('#include <bits/stdc++.h>'));
+  assert.ok(editOp.text.includes('#include <iostream>'));
   assert.strictEqual(editor.selection.active.line, 4);
   assert.strictEqual(editor.selection.active.character, 4);
 });

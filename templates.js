@@ -127,7 +127,7 @@ const TEMPLATES = {
   cpp: {
     language: 'C++',
     generate: () =>
-      `#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    ${CURSOR_MARKER}\n    return 0;\n}\n`
+      `#include <iostream>\nusing namespace std;\n\nint main() {\n    ${CURSOR_MARKER}\n    return 0;\n}\n`
   },
   java: {
     language: 'Java',

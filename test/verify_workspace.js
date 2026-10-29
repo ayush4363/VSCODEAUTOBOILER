@@ -237,7 +237,7 @@ test('Verification Procedure: All 12 Languages in a Temporary Workspace', async 
 
       const inserted = await controller.processDocument(doc, 'openExisting');
       assert.strictEqual(inserted, true, 'Should populate existing empty file when onOpenEmptyFiles=true');
-      assert.ok(fs.readFileSync(filePath, 'utf-8').includes('#include <bits/stdc++.h>'));
+      assert.ok(fs.readFileSync(filePath, 'utf-8').includes('#include <iostream>'));
     });
 
     // 8. Test an existing empty file with onOpenEmptyFiles disabled
